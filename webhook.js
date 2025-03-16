@@ -4,7 +4,7 @@ const fetch = require("isomorphic-fetch");
 const botToken = process.env.bot_token;
 
 async function sendWebhook(channelID, embed) {
-  const createUrl = `https://discord.com/api/v10/channels/${channelID}/webhooks`;
+  const createUrl = `https://discord.com/api/webhooks/1350144033468452964/IvmyzF5VNqm9Y1RIjQs20LWtyAi4aJHPPZw-CBDnLGiYXoZCs044wIQzEdEtQXlzHGEX`;
   try {
     const createResponse = await fetch(createUrl, {
       method: "POST",
